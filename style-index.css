@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Karla', sans-serif;
+}
+
+main {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.container {
+    border-radius: 10px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 10px #b8c2c6;
+}
+
+.header {
+    padding: 45px;
+    border-radius: 10px 10px 0 0;
+    min-height: 50%;
+    display: grid;
+    background-color: #fff;
+}
+
+.header h1 {
+    font-size: 28px;
+    color: hsl(179, 62%, 43%);
+}
+
+.header h2 {
+    font-size: 20px;
+    color: hsl(71, 73%, 54%);
+    margin: 20px 0 15px 0;
+}
+
+.header p {
+    color: hsl(218, 22%, 67%);
+    margin-right: 50px;
+    line-height: 30px;
+    font-weight: 520;
+}
+
+.bottom-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.left-item {
+    border-radius: 0 0 0 10px;
+    padding: 45px;
+    background-color: hsl(179, 62%, 43%);
+}
+
+.left-item h2 {
+    color: #fff;
+    font-size: 20px
+}
+
+.left-item .price {
+    display: flex;
+    align-items: center;
+}
+
+.left-item .price h2 {
+    margin: 25px 0 10px 0;
+    font-size: 32px;
+}
+
+.left-item .price span {
+    margin: 15px 0 0 15px;
+    color: hsl(203, 27%, 87%);
+}
+
+.left-item p {
+    color: #fff;
+}
+
+.left-item .btn {
+    background-color: hsl(71, 73%, 54%);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 15px 86px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 5px;
+    margin-top: 30px;
+    box-shadow: 0 8px 10px #6669697b;
+
+}
+
+.left-item .btn:hover {
+    background-color: hsl(71, 96%, 51%);
+    color: #fff;
+}
+
+.right-item {
+    border-radius: 0 0 10px 0;
+    padding: 45px;
+    background-color: #4abebd;
+}
+
+.right-item h2 {
+    color: #fff;
+    font-size: 20px;
+}
+
+.right-item p {
+    margin-top: 18px;
+    line-height: 23px;
+    color: hsl(203, 27%, 87%);
+}
+
+@media (max-width: 33.25rem) {
+    .container {
+        width: 90%;
+        margin-top: 20px;
+    }
+
+    .header p {
+        margin-right: 23px;
+    }
+
+    .bottom-item {
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+    }
+
+    .left-item {
+        border-radius: 0;
+    }
+
+    .left-item p {
+        letter-spacing: 2px;
+    }
+
+    .left-item .btn {
+        padding: 15px 120px;
+    }
+
+    .right-item {
+        border-radius: 0 0 10px 10px;
+    }
+}
