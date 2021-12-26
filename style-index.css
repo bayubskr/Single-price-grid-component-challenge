@@ -19,7 +19,7 @@ main {
 
 .container {
     border-radius: 10px;
-    width: 50%;
+    max-width: 43rem;
     display: flex;
     flex-direction: column;
     box-shadow: 0 0 10px #b8c2c6;
@@ -122,14 +122,24 @@ main {
     color: hsl(203, 27%, 87%);
 }
 
-@media (max-width: 33.25rem) {
+@media (max-width: 29.375rem) {
     .container {
         width: 90%;
         margin-top: 20px;
     }
 
+    .header h1 {
+        font-size: 23px;
+    }
+
+    .header h2 {
+        font-size: 16px;
+    }
+
     .header p {
-        margin-right: 23px;
+        margin-right: 0;
+        font-size: 16px;
+        font-weight: 500;
     }
 
     .bottom-item {
@@ -141,12 +151,8 @@ main {
         border-radius: 0;
     }
 
-    .left-item p {
-        letter-spacing: 2px;
-    }
-
     .left-item .btn {
-        padding: 15px 120px;
+        padding: 15px 80px;
     }
 
     .right-item {
